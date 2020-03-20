@@ -8,7 +8,6 @@ public class GestionMonumentsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GestionMonumentsApplication.class, args);
-		System.out.print("test");
 	}
 
 }
