@@ -6,187 +6,180 @@ import javax.persistence.Id;
 
 @Entity
 public class Monument {
-	
-	
+
 	@Id
-	@GeneratedValue
-	private Long id;
+	private Long unique_number;
 	
-	private String appellationCourante;
-	private Integer siecle;
-	private String precisionSurLaProtection;
-	private String dateDeProtection;
-	private String  statut;
-	private String description;
-	private String historique;
-	private String auteur;
-	private String adresse;
-	private String siecleFormatBrut;
-	private String region;
-	private String departement;
-	private String commune;
-	private String affectataire;
-	private String niveauDeProtection;
-	private String adresse1;
-	private String Commune1;
-	private Integer codeDepartement;
-	private String ancienneRegion;
-	private String DMAJ;
-	private String reference;
-	private String base;
-	private Integer INSEE;
-	private String coordonneesBan;
+	private String name_en;
+	private String name_fr;
+	private String short_description_en;
+	private String short_description_fr;
+	private String justification_en;
+	private String justification_fr;
+	private Integer date_inscribed;
+	private Double longitude;
+	private Double latitude;
+	private Double area_hectares;
+	private String category_short;
+	private String states_name_en;
+	private String states_name_fr;
+	private String region_en;
+	private String region_fr;
+	private String urlAudio;
+	private String mobiliteReduite;
+	private String type;
+	private String urlWiki;
+	private String UrlPhoto;
+	private String UrlIcone;
+	private String ville;
+	private Integer codePostal;
+	public Long getUnique_number() {
+		return unique_number;
+	}
+	public void setUnique_number(Long unique_number) {
+		this.unique_number = unique_number;
+	}
+	public String getName_en() {
+		return name_en;
+	}
+	public void setName_en(String name_en) {
+		this.name_en = name_en;
+	}
+	public String getName_fr() {
+		return name_fr;
+	}
+	public void setName_fr(String name_fr) {
+		this.name_fr = name_fr;
+	}
+	public String getShort_description_en() {
+		return short_description_en;
+	}
+	public void setShort_description_en(String short_description_en) {
+		this.short_description_en = short_description_en;
+	}
+	public String getShort_description_fr() {
+		return short_description_fr;
+	}
+	public void setShort_description_fr(String short_description_fr) {
+		this.short_description_fr = short_description_fr;
+	}
+	public String getJustification_en() {
+		return justification_en;
+	}
+	public void setJustification_en(String justification_en) {
+		this.justification_en = justification_en;
+	}
+	public String getJustification_fr() {
+		return justification_fr;
+	}
+	public void setJustification_fr(String justification_fr) {
+		this.justification_fr = justification_fr;
+	}
+	public Integer getDate_inscribed() {
+		return date_inscribed;
+	}
+	public void setDate_inscribed(Integer date_inscribed) {
+		this.date_inscribed = date_inscribed;
+	}
+	public Double getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
+	public Double getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+	public Double getArea_hectares() {
+		return area_hectares;
+	}
+	public void setArea_hectares(Double area_hectares) {
+		this.area_hectares = area_hectares;
+	}
+	public String getCategory_short() {
+		return category_short;
+	}
+	public void setCategory_short(String category_short) {
+		this.category_short = category_short;
+	}
+	public String getStates_name_en() {
+		return states_name_en;
+	}
+	public void setStates_name_en(String states_name_en) {
+		this.states_name_en = states_name_en;
+	}
+	public String getStates_name_fr() {
+		return states_name_fr;
+	}
+	public void setStates_name_fr(String states_name_fr) {
+		this.states_name_fr = states_name_fr;
+	}
+	public String getRegion_en() {
+		return region_en;
+	}
+	public void setRegion_en(String region_en) {
+		this.region_en = region_en;
+	}
+	public String getRegion_fr() {
+		return region_fr;
+	}
+	public void setRegion_fr(String region_fr) {
+		this.region_fr = region_fr;
+	}
+	public String getUrlAudio() {
+		return urlAudio;
+	}
+	public void setUrlAudio(String urlAudio) {
+		this.urlAudio = urlAudio;
+	}
+	public String getMobiliteReduite() {
+		return mobiliteReduite;
+	}
+	public void setMobiliteReduite(String mobiliteReduite) {
+		this.mobiliteReduite = mobiliteReduite;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getUrlWiki() {
+		return urlWiki;
+	}
+	public void setUrlWiki(String urlWiki) {
+		this.urlWiki = urlWiki;
+	}
+	public String getUrlPhoto() {
+		return UrlPhoto;
+	}
+	public void setUrlPhoto(String urlPhoto) {
+		UrlPhoto = urlPhoto;
+	}
+	public String getUrlIcone() {
+		return UrlIcone;
+	}
+	public void setUrlIcone(String urlIcone) {
+		UrlIcone = urlIcone;
+	}
+	public String getVille() {
+		return ville;
+	}
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+	public Integer getCodePostal() {
+		return codePostal;
+	}
+	public void setCodePostal(Integer codePostal) {
+		this.codePostal = codePostal;
+	}
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getAppellationCourante() {
-		return appellationCourante;
-	}
-	public void setAppellationCourante(String appellationCourante) {
-		this.appellationCourante = appellationCourante;
-	}
-	public Integer getSiecle() {
-		return siecle;
-	}
-	public void setSiecle(Integer siecle) {
-		this.siecle = siecle;
-	}
-	public String getPrecisionSurLaProtection() {
-		return precisionSurLaProtection;
-	}
-	public void setPrecisionSurLaProtection(String précisionSurLaProtection) {
-		this.precisionSurLaProtection = précisionSurLaProtection;
-	}
-	public String getDateDeProtection() {
-		return dateDeProtection;
-	}
-	public void setDateDeProtection(String dateDeProtection) {
-		this.dateDeProtection = dateDeProtection;
-	}
-	public String getStatut() {
-		return statut;
-	}
-	public void setStatut(String statut) {
-		this.statut = statut;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	public String getHistorique() {
-		return historique;
-	}
-	public void setHistorique(String historique) {
-		this.historique = historique;
-	}
-	public String getAuteur() {
-		return auteur;
-	}
-	public void setAuteur(String auteur) {
-		this.auteur = auteur;
-	}
-	public String getAdresse() {
-		return adresse;
-	}
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
-	}
-	public String getSiecleFormatBrut() {
-		return siecleFormatBrut;
-	}
-	public void setSiecleFormatBrut(String siecleFormatBrut) {
-		this.siecleFormatBrut = siecleFormatBrut;
-	}
-	public String getRegion() {
-		return region;
-	}
-	public void setRegion(String region) {
-		this.region = region;
-	}
-	public String getDepartement() {
-		return departement;
-	}
-	public void setDepartement(String departement) {
-		this.departement = departement;
-	}
-	public String getCommune() {
-		return commune;
-	}
-	public void setCommune(String commune) {
-		this.commune = commune;
-	}
-	public String getAffectataire() {
-		return affectataire;
-	}
-	public void setAffectataire(String affectataire) {
-		this.affectataire = affectataire;
-	}
-	public String getNiveauDeProtection() {
-		return niveauDeProtection;
-	}
-	public void setNiveauDeProtection(String niveauDeProtection) {
-		this.niveauDeProtection = niveauDeProtection;
-	}
-	public String getAdresse1() {
-		return adresse1;
-	}
-	public void setAdresse1(String adresse1) {
-		this.adresse1 = adresse1;
-	}
-	public String getCommune1() {
-		return Commune1;
-	}
-	public void setCommune1(String commune1) {
-		Commune1 = commune1;
-	}
-	public Integer getCodeDepartement() {
-		return codeDepartement;
-	}
-	public void setCodeDepartement(Integer codeDepartement) {
-		this.codeDepartement = codeDepartement;
-	}
-	public String getAncienneRegion() {
-		return ancienneRegion;
-	}
-	public void setAncienneRegion(String ancienneRegion) {
-		this.ancienneRegion = ancienneRegion;
-	}
-	public String getDMAJ() {
-		return DMAJ;
-	}
-	public void setDMAJ(String dMAJ) {
-		DMAJ = dMAJ;
-	}
-	public String getReference() {
-		return reference;
-	}
-	public void setReference(String reference) {
-		this.reference = reference;
-	}
-	public String getBase() {
-		return base;
-	}
-	public void setBase(String base) {
-		this.base = base;
-	}
-	public Integer getINSEE() {
-		return INSEE;
-	}
-	public void setINSEE(Integer iNSEE) {
-		INSEE = iNSEE;
-	}
-	public String getCoordonneesBan() {
-		return coordonneesBan;
-	}
-	public void setCoordonneesBan(String coordonneesBan) {
-		this.coordonneesBan = coordonneesBan;
-	}
+	
+	
 
 	
 
